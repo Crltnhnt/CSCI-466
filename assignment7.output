@@ -1,0 +1,116 @@
+########################################################
+# CSCI 466 - Assignment 7 - Spring 2018
+#
+# Progammer: Carlton Hunt
+# Z-ID: Z1772974
+# Section: 1
+# TA: Ishaan Mohammed
+# Date Due: 03/28/2018
+# Purpose: SQL queries
+########################################################
+
+MariaDB [(none)]> \T assignment7.output
+MariaDB [(none)]> USE z1772974;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [z1772974]> \. assignment7.sql
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.26 sec)
+
+Query OK, 0 rows affected (0.23 sec)
+
+Query OK, 0 rows affected (0.37 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.09 sec)
+
+Query OK, 1 row affected (0.09 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
++---------+-----------+----------+
+| ownerId | firstName | lastName |
++---------+-----------+----------+
+|       1 | Brianna   | Elias    |
+|       2 | Carlton   | Hunt     |
+|       3 | Emma      | Ortiz    |
+|       4 | Kris      | Bryant   |
+|       5 | Anthony   | Rizzo    |
++---------+-----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.47 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.09 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
++-------+---------+----------+---------+
+| petId | petName | petDOB   | ownerId |
++-------+---------+----------+---------+
+|     1 | Nala    | 03/09/14 |       1 |
+|     2 | Selena  | 06/08/10 |       2 |
+|     3 | Gabby   | 01/12/14 |       3 |
+|     4 | Ginger  | 06/06/12 |       3 |
+|     5 | Lion    | 08/01/13 |       5 |
++-------+---------+----------+---------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (1.14 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.10 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 5 rows affected (0.92 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
++-------+---------+------------+---------+------+
+| petId | petName | petDOB     | ownerId | type |
++-------+---------+------------+---------+------+
+|     1 | Nala    | 2003-09-14 |       1 | Cat  |
+|     2 | Selena  | 2006-08-10 |       2 | Cat  |
+|     3 | Gabby   | 2001-12-14 |       3 | Dog  |
+|     4 | Ginger  | 2006-06-12 |       3 | Dog  |
+|     5 | Lion    | 2008-01-13 |       5 | Fish |
++-------+---------+------------+---------+------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
++---------+-----------+----------+
+| petName | firstName | lastName |
++---------+-----------+----------+
+| Nala    | Brianna   | Elias    |
+| Selena  | Carlton   | Hunt     |
+| Gabby   | Emma      | Ortiz    |
+| Ginger  | Emma      | Ortiz    |
+| Lion    | Anthony   | Rizzo    |
++---------+-----------+----------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1772974]> \q

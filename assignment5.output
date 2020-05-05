@@ -1,0 +1,196 @@
+###########################################################
+# CSCI 466 - Assignment 5 - Spring 2018
+#
+# Progammer: Carlton Hunt
+# Z-ID: Z1772974
+# Section: 1
+# TA: Ishaan Mohammed
+# Date Due: 03/02/2018
+#
+# Purpose: Output from Assignment 5 sql
+############################################################
+
+MariaDB [BabyName]> source assignment5.sql
++--------------------+
+| Database           |
++--------------------+
+| BabyName           |
+| Premiere           |
+| classicmodels      |
+| henrybooks         |
+| information_schema |
+| test               |
+| z1772974           |
++--------------------+
+7 rows in set (0.04 sec)
+
+Database changed
++--------------------+
+| Tables_in_BabyName |
++--------------------+
+| BabyName           |
++--------------------+
+1 row in set (0.00 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(15) | NO   | PRI | NULL    |       |
+| count  | int(11)     | YES  |     | NULL    |       |
+| gender | char(1)     | NO   | PRI | NULL    |       |
+| year   | smallint(6) | NO   | PRI | NULL    |       |
+| place  | char(2)     | NO   | PRI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
++------+
+| year |
++------+
+| 1920 |
+| 1922 |
+| 1923 |
+| 1925 |
+| 1926 |
+| 1929 |
+| 1930 |
+| 1932 |
+| 1936 |
+| 1940 |
+| 1943 |
+| 1944 |
+| 1946 |
+| 1948 |
+| 1950 |
+| 1951 |
+| 1953 |
+| 1954 |
+| 1956 |
+| 1957 |
+| 1958 |
+| 1959 |
+| 1960 |
+| 1961 |
+| 1964 |
+| 1965 |
+| 1966 |
+| 1968 |
+| 1969 |
+| 1970 |
+| 1971 |
+| 1974 |
+| 1976 |
+| 1980 |
+| 1981 |
+| 1984 |
+| 1986 |
+| 1987 |
+| 1992 |
+| 1993 |
+| 1994 |
+| 1995 |
+| 1996 |
+| 1880 |
+| 1881 |
+| 1882 |
+| 1883 |
+| 1884 |
+| 1885 |
+| 1886 |
++------+
+50 rows in set (0.00 sec)
+
++--------------+
+| name         |
++--------------+
+| Aadam        |
+| Aadil        |
+| Aailiyah     |
+| Aailyah      |
+| Aaisha       |
+| Aakash       |
+| Aaleyah      |
+| Aalia        |
+| Aaliah       |
+| Aaliayah     |
+| Aalijah      |
+| Aaliya       |
+| Aaliyah      |
+| Aaliyha      |
+| Aalliyah     |
+| Aalyah       |
+| Aalyiah      |
+| Aaminah      |
+| Aamir        |
+| Aanand       |
+| Aanchal      |
+| Aanisah      |
+| Aaran        |
+| Aaren        |
+| Aariana      |
+| Aaric        |
+| Aarika       |
+| Aarin        |
+| Aarion       |
+| Aariona      |
+| Aaron        |
+| Aaronjames   |
+| Aaronmichael |
+| Aaronn       |
+| Aarron       |
+| Aarti        |
+| Aaryn        |
+| Aashna       |
+| Aasia        |
+| Aasin        |
+| Aasiyah      |
+| Ab           |
+| Abagael      |
+| Abagail      |
+| Abagaile     |
+| Abagale      |
+| Abagayle     |
+| Abaigeal     |
+| Abanoub      |
+| Abayomi      |
++--------------+
+50 rows in set (0.00 sec)
+
++----------+------+--------+
+| name     | name | gender |
++----------+------+--------+
+| Aailiyah |    5 | F      |
+| Aadam    |    6 | M      |
++----------+------+--------+
+2 rows in set (0.00 sec)
+
++---------+-------+------+
+| name    | count | year |
++---------+-------+------+
+| Carlton |     6 | 1920 |
++---------+-------+------+
+1 row in set (0.00 sec)
+
++---------+
+| Rows    |
++---------+
+| 7601706 |
++---------+
+1 row in set (0.00 sec)
+
++-------+
+| Names |
++-------+
+| 64807 |
++-------+
+1 row in set (0.00 sec)
+
++-------+--------+
+| Names | gender |
++-------+--------+
+| 37785 | F      |
+| 26240 | M      |
++-------+--------+
+2 rows in set (0.03 sec)
+
+ERROR 1728 (HY000): Cannot load from mysql.proc. The table is probably corrupted
+MariaDB [BabyName]> \q
